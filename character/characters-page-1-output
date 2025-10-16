@@ -1,10 +1,21 @@
-query {
-  characters(page: 1) {
-    results {
-      id
-      name
-      status
-      image
+{
+  "data": {
+    "characters": {
+      "results": [
+        {
+          "id": "1",
+          "name": "Rick Sanchez",
+          "status": "Alive",
+          "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+        },
+        {
+          "id": "2",
+          "name": "Morty Smith",
+          "status": "Alive",
+          "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+        }
+        // ...more characters
+      ]
     }
   }
 }
